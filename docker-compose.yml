@@ -26,6 +26,7 @@ services:
       - postgres
     ports:
       - '3000:3000'
+      - '80:3000'
     restart: on-failure
     volumes:
       - ./keys:/root/.ssh
